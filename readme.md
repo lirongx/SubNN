@@ -12,12 +12,12 @@
 ### Usage & Demo
 
 *subNN*
-| Function Name | Input | Output | Utility |
-|---------------|-------|--------|---------|
-| \_\_init\_\_(self, k\_train=10, n_model=10, subSampleRatio=0.1, algorithm_NN='kd_tree')  | *k_train* is the k used in denoising; *n_model* is number of submodels; *subSampleRatio* is the size of subsample used in the submodel; *algorithm_NN* is the algorithm used in finding nearest neighbors, choices are ['brute', 'kd_tree', 'ball_tree']    | void      | initialize
-| fit(self, X, y, rSeed=1234) | *X* is training signal matrix of size N*M;  *y* is training target vector of length N; N is number of samples  | void      | fit training data to model
-| predict(self, T, parallel=True) | *T*, matrix of size s*M, is new signals to be predicted, s is the number of new data points; *parallel* is True if run the program in parallel | vector of length s, the predicted label of each point | predict the label of new data
-| search_k(self, X, y, n_folds=2, n_repeat=1) | *X* is training signal matrix of size N*M;  *y* is training target vector of length N; *n_folds* and *n_repeat* specifies the number of folds and repeatition in cross validation for a given *k* | the *k* giving best cross validation error rate | find the best *k* in training data |
+ Function Name | Input | Output | Utility |
+---------------|-------|--------|---------|
+ \_\_init\_\_(self, k\_train=10, n_model=10, subSampleRatio=0.1, algorithm_NN='kd_tree')  | *k_train* is the k used in denoising; *n_model* is number of submodels; *subSampleRatio* is the size of subsample used in the submodel; *algorithm_NN* is the algorithm used in finding nearest neighbors, choices are ['brute', 'kd_tree', 'ball_tree']    | void      | initialize
+ fit(self, X, y, rSeed=1234) | *X* is training signal matrix of size N*M;  *y* is training target vector of length N; N is number of samples  | void      | fit training data to model
+ predict(self, T, parallel=True) | *T*, matrix of size s*M, is new signals to be predicted, s is the number of new data points; *parallel* is True if run the program in parallel | vector of length s, the predicted label of each point | predict the label of new data
+ search_k(self, X, y, n_folds=2, n_repeat=1) | *X* is training signal matrix of size N*M;  *y* is training target vector of length N; *n_folds* and *n_repeat* specifies the number of folds and repeatition in cross validation for a given *k* | the *k* giving best cross validation error rate | find the best *k* in training data |
 
 *subNN_seq*
 | Function Name | Input | Output | Utility |
