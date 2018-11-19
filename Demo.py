@@ -36,11 +36,3 @@ print( a.search_k(X,y) )
 print( a.error_rate(y, a.predict(X)))
 
 print('success!')
-
-
-
-''' Problems:
-    1. if run on 1 computer: huge memory consumption
-    2. if run on multiple computer: how to comunicate?
-    3. moreover: how to find the best k? on 1 com or >1? In para (faster) or in sequential (much slower, used in NIPS)
-'''
